@@ -77,19 +77,57 @@ a {
     width: 100%;
 }
 
-.link svg {
+.green {
+    border: 4px solid #0f0;
+    color: #0f0;
+
+    .mask {
+        background-color: #0f0;
+    }
+}
+
+.mask {
     width: 1em;
     height: 1em;
+    background-color: #ffffff;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.discord {
+    -webkit-mask-image: url('images/discord.png');
+    mask-image: url('images/discord.png');
+}
+
+.twitter {
+    -webkit-mask-image: url('images/twitter.png');
+    mask-image: url('images/twitter.png');
+}
+
+.bluesky {
+    -webkit-mask-image: url('images/bluesky.png');
+    mask-image: url('images/bluesky.png');
+}
+
+.github {
+    -webkit-mask-image: url('images/github.png');
+    mask-image: url('images/github.png');
+}
+
+.kofi {
+    -webkit-mask-image: url('images/ko-fi.png');
+    mask-image: url('images/ko-fi.png');
 }
 
 .link:hover {
     border: 4px solid #ff0;
     color: #ff0;
-}
 
-.green {
-    border: 4px solid #0f0;
-    color: #0f0;
+    .mask {
+        background-color: #ff0;
+    }
 }
 
 .big {
